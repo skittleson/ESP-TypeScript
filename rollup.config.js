@@ -1,12 +1,19 @@
-import es3 from "rollup-plugin-es3";
 import typescript from "@rollup/plugin-typescript";
 import { terser } from "rollup-plugin-terser";
+import commonjs from "@rollup/plugin-commonjs";
+import nodeResolve from "@rollup/plugin-node-resolve";
 
 export default {
-  input: "index.ts",
+  input: "src/index.ts",
   output: {
     file: "dist/cjs.js",
     format: "cjs",
   },
-  plugins: [typescript(), es3(), terser()],
+  plugins: [
+    typescript({
+      target: "es5",
+    }),
+    nodeResolve(),
+    commonjs(),
+  ],
 };
