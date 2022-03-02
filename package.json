@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "upload": "espruino --no-ble -p COM3 -b 115200 index.js"
+    "build": "tsc",
+    "upload": "espruino --no-ble -p COM3 -b 115200 dist/index.js",
+    "compile": "npm run-script build && npm run-script upload"
   },
   "author": "",
   "license": "ISC"
