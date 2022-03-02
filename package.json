@@ -1,0 +1,12 @@
+{
+  "name": "esp-typescript",
+  "version": "1.0.0",
+  "description": "Running a JavaScript / TypeScript app on a microcontroller.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload": "espruino --no-ble -p COM3 -b 115200 index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
