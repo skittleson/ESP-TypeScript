@@ -1,9 +1,8 @@
 import { DependencyProvider } from "./dependencyProvider";
 
-const d = new DependencyProvider();
+const dependencyProvider = new DependencyProvider();
 var on = false;
 setInterval(function () {
   on = !on;
-  d.setValue(2, on);
-  //   digitalWrite(2, on);
+  dependencyProvider.setValue(2, on);
 }, 5000);

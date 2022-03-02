@@ -1,6 +1,6 @@
 /**
  *
- * @param pin GPIO Pin
+ * @param pin GPIO number
  * @param value bool value
  */
-function digitalWrite(pin: Number, value: boolean);
+declare function digitalWrite(pin: Number, value: boolean);
