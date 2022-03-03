@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Transpile TypeScript to JavaScript for ESP8266/ESP32 microcontrollers template project. The p
+> Transpile TypeScript to JavaScript for ESP8266/ESP32 microcontrollers template project. Writing safe, maintainable, and testable code is the projects goal.
 
 ## Install
 
@@ -20,7 +20,7 @@ npm install
 ## Usage
 
 ```sh
-npm run-script compile
+npm run-script transpile
 ```
 
 ## Run tests
@@ -31,7 +31,8 @@ npm run-script test
 
 ## Example
 
-blinky.ts
+The simpliest example in `blinky.ts`. Blink a LED.
+
 ```typescript
 const BUILTIN_LED = 2;
 export function blinkly(intervalMs: number = 2000, pin: number = BUILTIN_LED) {
