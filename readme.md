@@ -44,6 +44,15 @@ export function blinkly(intervalMs: number = 2000, pin: number = BUILTIN_LED) {
 }
 ```
 
+## Road map
+
+-[x] Transpile TypeScript to Espruino flavor of JavaScript
+-[x] Example usage of typed code
+-[x] Unit testing
+-[] Short commands to build, upload, and monitor
+-[] Integration testing
+-[] Firmware guidance docs
+
 ## Author
 
 👤 **Spencer Kittleson**
