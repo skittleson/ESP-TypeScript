@@ -9,7 +9,7 @@
   </a>
 </p>
 
-> Transpile TypeScript to JavaScript for ESP8266/ESP32 microcontrollers template project. Writing safe, maintainable, and testable code is the projects goal.
+> Transpile TypeScript to Espruino flavor of JavaScript for ESP8266/ESP32 microcontrollers template project. Writing safe, maintainable, and testable code is the projects goal.
 
 ## Install
 
