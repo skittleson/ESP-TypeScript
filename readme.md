@@ -52,7 +52,7 @@ export function blinkly(intervalMs: number = 2000, pin: number = BUILTIN_LED) {
 }
 ```
 
-More advance example using a class, properties, and type checking:  `AdvanceBlinky` class in `blinky.ts`.
+More advance example using a class, properties, and type checking:   `AdvanceBlinky` class in [blinky.ts](src/blinky.ts).
 
 ## Road map
 
@@ -62,7 +62,6 @@ More advance example using a class, properties, and type checking:  `AdvanceBlin
 - [x] Unit testing
 - [ ] Integration testing
 - [ ] Firmware guidance docs
-
 
 ## Devices
 
