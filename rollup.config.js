@@ -12,6 +12,9 @@ export default {
   plugins: [
     typescript({
       target: "es5",
+      compilerOptions: {
+        types: ["node"],
+      },
     }),
     nodeResolve(),
     commonjs(),

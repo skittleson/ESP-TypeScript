@@ -1,12 +1,11 @@
 import { AdvanceBlinky } from "./blinky";
 
-// blinkly();
 const blinkly = new AdvanceBlinky();
 blinkly.pin = 2;
-blinkly.intervalCallback = (count) => {
+blinkly.intervalCallback = (count: number) => {
   console.log(count);
-  if (count > 4) {
-    blinkly.clear();
+  if (count > 10) {
+    blinkly.stop();
   }
 };
-blinkly.init(2100);
+blinkly.init(3000);

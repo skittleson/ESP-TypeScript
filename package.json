@@ -1,6 +1,6 @@
 {
   "name": "esp-typescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Running a JavaScript / TypeScript app on a microcontroller.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "build": "rollup -c",
     "upload": "espruino --no-ble -p COM15 -b 115200 dist/cjs.js",
     "transpile": "npm run-script build && npm run-script upload",
-    "serial": "espruino -b 115200 -p COM15 --no-ble"
+    "monitor": "espruino -b 115200 -p COM15 --no-ble"
   },
   "author": "",
   "license": "ISC",
