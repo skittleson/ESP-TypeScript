@@ -52,7 +52,10 @@ export function blinkly(intervalMs: number = 2000, pin: number = BUILTIN_LED) {
 }
 ```
 
-More advance example using a class, properties, and type checking:   `AdvanceBlinky` class in [blinky.ts](src/blinky.ts).
+More advance example using a class, properties, and type checking:   `AdvanceBlinky` class in [blinky.ts](src/blinky.ts). 
+
+In depth documentation about [Espruino JavaScript API and flashing](https://www.espruino.com/Reference#software)
+
 
 ## Road map
 
