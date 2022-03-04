@@ -1,3 +1,5 @@
+import { IEspruinoHardwareDependency } from "./espruinoHardwareDependency";
+
 const BUILTIN_LED = 2;
 export function blinkly(intervalMs: number = 2000, pin: number = BUILTIN_LED) {
   let toggleStatus = false;
@@ -13,6 +15,10 @@ export class AdvanceBlinky {
   intervalId!: number;
   pin!: number;
   intervalCallback!: Function;
+  private espruino: IEspruinoHardwareDependency;
+  constructor(espruino: IEspruinoHardwareDependency){
+    this.espruino = espruino;
+  }
 
   /**
    * Initialize a loop to toggle an led on/off
@@ -26,14 +32,12 @@ export class AdvanceBlinky {
       // in order to use these variables in setInterval context, redeclare scope properties of class to internal scope.
       const pin = this.pin;
       const callback = this.intervalCallback;
+      const espruino = this.espruino;
 
       // setInterval returns an id to cancel later (the nodejs/browser version is an object typically)
-      // @ts-ignore
-      this.intervalId = setInterval(function () {
+      this.intervalId = this.espruino.esp_setInterval(function () {
         toggleStatus = !toggleStatus;
-        
-        // @ts-ignore
-        digitalWrite(pin, toggleStatus);
+        espruino.esp_digitalWrite(pin, toggleStatus);
         count++;
         if (callback instanceof Function) {
           callback(count);
@@ -48,9 +52,7 @@ export class AdvanceBlinky {
    * Stop loop
    */
   stop() {
-
-    // @ts-ignore
-    clearInterval(this.intervalId);
+    this.espruino.esp_clearInterval(this.intervalId);
     this.intervalId = 0;
   }
 }

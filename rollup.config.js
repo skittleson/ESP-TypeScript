@@ -11,10 +11,7 @@ export default {
   },
   plugins: [
     typescript({
-      target: "es5",
-      compilerOptions: {
-        types: ["node"],
-      },
+      tsconfig: "tsconfig.json",
     }),
     nodeResolve(),
     commonjs(),
