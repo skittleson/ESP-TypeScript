@@ -8,6 +8,7 @@
     "build": "rollup -c",
     "upload": "espruino --no-ble -p COM15 -b 115200 dist/cjs.js",
     "transpile": "npm run-script build && npm run-script upload",
+    "commit": "npm run-script build && espruino --no-ble -p COM15 -b 115200 dist/cjs.js -e \"save()\"",
     "monitor": "espruino -b 115200 -p COM15 --no-ble"
   },
   "author": "",

@@ -25,6 +25,11 @@ Adjust port used in `package.json` then:
 npm run-script transpile
 ```
 
+Permanently save transpile code on device.
+```sh
+npm run-script commit
+```
+
 Monitor serial responses
 
 ```sh

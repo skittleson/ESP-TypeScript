@@ -23,7 +23,7 @@ export class AdvanceBlinky {
       let toggleStatus = false;
       let count = 0;
 
-      // in order to use instead a setInterval context, redeclare scope properties of class to internal scope.
+      // in order to use these variables in setInterval context, redeclare scope properties of class to internal scope.
       const pin = this.pin;
       const callback = this.intervalCallback;
 
