@@ -1,6 +1,6 @@
 # ESP-TypeScript
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
   </a>
@@ -59,7 +59,7 @@ export function blinkly(intervalMs: number = 2000, pin: number = BUILTIN_LED) {
 }
 ```
 
-More advance example using a class, properties, testing using mocks, and type checking:   `AdvanceBlinky` class in [blinky.ts](src/blinky.ts). 
+More advance example using a class, properties, testing using mocks and type checking:   `AdvanceBlinky` class in [advanceBlinky.ts](src/advanceBlinky.ts) with test at [test/blinky.spec.ts](test/blinky.spec.ts). 
 
 In depth documentation about [Espruino JavaScript API and flashing](https://www.espruino.com/Reference#software)
 
@@ -70,8 +70,8 @@ In depth documentation about [Espruino JavaScript API and flashing](https://www.
 - [x] Example usage of typed code
 - [x] Short commands to build, upload, and monitor
 - [x] Unit testing
+- [x] Firmware guidance docs
 - [ ] Integration testing
-- [ ] Firmware guidance docs
 
 ## Devices
 

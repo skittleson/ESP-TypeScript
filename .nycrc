@@ -1,0 +1,13 @@
+{
+  "extends": "@istanbuljs/nyc-config-typescript",
+  "all": true,
+  "check-coverage": true,
+  "include": [
+    "src/"
+  ],
+  "exclude": [
+    "src/espruinoHardwareDependency.ts",
+    "src/index.ts",
+    "src/blinky.ts"
+  ]
+}

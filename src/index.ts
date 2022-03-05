@@ -1,4 +1,4 @@
-import { AdvanceBlinky } from "./blinky";
+import { AdvanceBlinky } from "./advanceBlinky";
 import { EspruinoHardwareDependency } from "./espruinoHardwareDependency";
 
 const blinkly = new AdvanceBlinky(new EspruinoHardwareDependency());
