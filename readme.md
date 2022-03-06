@@ -1,6 +1,7 @@
 # ESP-TypeScript
+
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.3-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.4-blue.svg?cacheSeconds=2592000" />
   <a href="#" target="_blank">
     <img alt="License: ISC" src="https://img.shields.io/badge/License-ISC-yellow.svg" />
   </a>
@@ -9,7 +10,7 @@
   </a>
 </p>
 
-> Transpile TypeScript to Espruino flavor of JavaScript for ESP8266/ESP32 microcontrollers template project. Writing safe, maintainable, and testable code is the projects goal.
+> Transpile TypeScript to [Espruino](https://github.com/espruino/Espruino) flavor of JavaScript for ESP8266/ESP32 microcontrollers template project. Writing safe, maintainable, and testable code is the projects goal.
 
 ## Install
 
@@ -26,6 +27,7 @@ npm run-script transpile
 ```
 
 Permanently save transpile code on device.
+
 ```sh
 npm run-script commit
 ```
@@ -59,10 +61,9 @@ export function blinkly(intervalMs: number = 2000, pin: number = BUILTIN_LED) {
 }
 ```
 
-More advance example using a class, properties, testing using mocks and type checking:   `AdvanceBlinky` class in [advanceBlinky.ts](src/advanceBlinky.ts) with test at [test/blinky.spec.ts](test/blinky.spec.ts). 
+More advance example using a class, properties, testing using mocks and type checking: `AdvanceBlinky` class in [advanceBlinky.ts](src/advanceBlinky.ts) with test at [test/blinky.spec.ts](test/blinky.spec.ts).
 
 In depth documentation about [Espruino JavaScript API and flashing](https://www.espruino.com/Reference#software)
-
 
 ## Road map
 
@@ -75,28 +76,25 @@ In depth documentation about [Espruino JavaScript API and flashing](https://www.
 
 ## Devices
 
-ESP8266
+[Firmware selections](http://www.espruino.com/Download)
 
+[ESP8266](https://amzn.to/3vA67By)
 [![Wemos D1 mini ESP8266](original.jpg)](https://amzn.to/3vA67By)
 
-
-ESP32
+[ESP32](https://amzn.to/3Ml7Znx)
 [![Wemos ESP32](esp32.jpg)](https://amzn.to/3Ml7Znx)
 
-
-These devices are also know to work: https://templates.blakadder.com/
-
+These devices are also know to work: [https://templates.blakadder.com/](https://templates.blakadder.com/)
 
 ## Author
 
 👤 **Spencer Kittleson**
 
-* Website: https://docodethatmatters.com
-* Twitter: [@skittleson](https://twitter.com/skittleson)
-* Github: [@skittleson](https://github.com/skittleson)
-* LinkedIn: [@skittleson](https://linkedin.com/in/skittleson)
+- Website: https://docodethatmatters.com
+- Twitter: [@skittleson](https://twitter.com/skittleson)
+- Github: [@skittleson](https://github.com/skittleson)
+- LinkedIn: [@skittleson](https://linkedin.com/in/skittleson)
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
-
