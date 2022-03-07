@@ -8,6 +8,7 @@
   <a href="https://twitter.com/skittleson" target="_blank">
     <img alt="Twitter: skittleson" src="https://img.shields.io/twitter/follow/skittleson.svg?style=social" />
   </a>
+  <img alt="nycrc config on GitHub" src="https://img.shields.io/nycrc/skittleson/ESP-TypeScript">
 </p>
 
 > Transpile TypeScript to [Espruino](https://github.com/espruino/Espruino) flavor of JavaScript for ESP8266/ESP32 microcontrollers template project. Writing safe, maintainable, and testable code is the projects goal.
