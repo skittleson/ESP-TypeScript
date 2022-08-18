@@ -1,6 +1,6 @@
 {
   "name": "esp-typescript",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Transpile TypeScript to Espruino flavor of JavaScript for ESP8266/ESP32 microcontrollers template project. Writing safe, maintainable, and testable code is the projects goal.",
   "main": "index.js",
   "scripts": {
@@ -9,28 +9,30 @@
     "upload": "espruino --no-ble -p COM6 -b 115200 dist/cjs.js",
     "transpile": "npm run-script build && npm run-script upload",
     "commit": "npm run-script build && espruino --no-ble -p COM6 -b 115200 dist/cjs.js -e \"save()\"",
-    "monitor": "espruino -b 115200 -p COM6 --no-ble"
+    "monitor": "espruino -b 115200 -p COM6 --no-ble",
+    "upgrade-pkgs": "ncu -u"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
-    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "@rollup/plugin-typescript": "^8.3.1",
-    "@types/chai": "^4.3.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/chai": "^4.3.3",
     "@types/expect": "^24.3.0",
-    "@types/mocha": "^9.1.0",
-    "@types/sinon": "^10.0.11",
+    "@types/mocha": "^9.1.1",
+    "@types/sinon": "^10.0.13",
     "chai": "^4.3.6",
-    "mocha": "^9.2.1",
+    "mocha": "^10.0.0",
     "nyc": "^15.1.0",
     "rollup-plugin-es3": "^1.1.0",
     "rollup-plugin-terser": "^7.0.2",
-    "sinon": "^13.0.1",
-    "ts-auto-mock": "^3.5.0",
-    "ts-node": "^10.6.0",
-    "typemoq": "^2.1.0"
+    "sinon": "^14.0.0",
+    "ts-auto-mock": "^3.6.2",
+    "ts-node": "^10.9.1",
+    "typemoq": "^2.1.0",
+    "npm-check-updates": "^16.0.5"
   }
 }
